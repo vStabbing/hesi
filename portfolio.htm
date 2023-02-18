@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Portfolio</title>
+	<style>
+        body {
+			background-image: url('https://cdn.discordapp.com/attachments/1028077980129431634/1076557932176609420/IMG_8650.gif');
+			background-size: cover;
+		}
+		.center {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			width: 400px;
+			height: 200px;
+			border-radius: 20px;
+			background-color: #000000b2;
+			box-shadow: 0px 0px 40px #000000;
+			text-align: center;
+			padding-top: 50px;
+			backdrop-filter: blur(10px);
+			-webkit-backdrop-filter: blur(10px); /* For Safari */
+			z-index: 2;
+		}
+        h1 {
+			font-family: "Roboto", sans-serif;
+			font-weight: bold;
+			font-size: 40px;
+			color: #FFFFFF;
+			text-shadow: 2px 2px 5px #000000;
+			margin: 0;
+		}
+        .button {
+			display: inline-block;
+			width: 100px;
+			height: 40px;
+			border-radius: 20px;
+			background-color: #ffffff00;
+			font-family: "Roboto", sans-serif;
+			font-weight: bold;
+			font-size: 26px;
+			color: #FFFFFF;
+			text-shadow: 1px 1px 2px #000000;
+			text-align: center;
+			line-height: 40px;
+			cursor: pointer;
+			box-shadow: 0px 0px 10px #88888800;
+			margin: 10px;
+			transition: all 0.2s;
+		}
+        .button:hover {
+			background-color: #ffffff00;
+			transform: scale(1.1);
+			letter-spacing: 1px;
+		}
+        .portfolio {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 50px;
+        }
+        .portfolio-item {
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            background-color: #000000b2;
+            border-radius: 20px;
+            box-shadow: 0px 0px 20px #000000;
+            overflow: hidden;
+            transition: all 0.2s;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.1);
+        }
+        .portfolio-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+	</style>
+</head>
+<body>
+	<div class="center">
+        <h1>My Portfolio</h1>
+        <div class="button-group">
+            <div class="button" onclick="location.href='index.htm';">Home</div>
+			<div class="button" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScureakhq0qkLVsXR3BNzGS1Pa60BFCQOZCskb_2XqG-ouRlA/viewform?usp=sf_link';">Order</div>
+		</div>
+	</div>
+    <div class="portfolio">
+        <div class="portfolio-item">
+            <img src="banner2.png" alt="Portfolio item 1">
+        </div>
+        <div class="portfolio-item">
+            <img src="banner1.png" alt="Portfolio item 2">
